@@ -79,9 +79,9 @@ header{
     }
 
     .comingsoon{
-        top: 40%;
-        left:55%;
-        transform: translate(-40%, -55%);
+        top: 30%;
+        left:40%;
+        transform: translate(-30%, -40%);
         height: 150px;
     }
     .name{
