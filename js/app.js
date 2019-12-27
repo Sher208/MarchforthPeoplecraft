@@ -47,6 +47,12 @@ const leftfootpath3 = {
     ]
 };
 
+$(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 1) {
+        $(window).scrollTop(0);
+    }
+});
+
 const footLogo = document.querySelector('.footlogo');
 const footLeft = document.querySelector('.footlogoleft');
 const footRight = document.querySelector('.footlogoright');
@@ -153,8 +159,3 @@ const scene = new ScrollMagic.Scene({
 .setPin('.logo')
 .addTo(controller)
 
-$(window).scroll(function() {
-    if($(window).scrollTop() + $(window).height() > $(document).height() - 1) {
-        $(window).scrollTop(0);
-    }
-});
