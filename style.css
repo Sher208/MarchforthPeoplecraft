@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.email{
+    position: absolute;
+    top: 3%;
+    left: 1%;
+}
+
+.name{
+    height: 350px;
+}
+
+.footlogo{
+    height: 350px;
+}
+
+.footlogoright{
+    height: 140px;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left:30%;
+}
+
+.footlogoleft{
+    height: 140px;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left:24%;
+}
+
+.comingsoon{
+    position: absolute;
+    height: 500px;
+    z-index: 7;
+    top: 60%;
+    left:65%;
+    transform: translate(-60%, -65%);
+    opacity: 0;
+}
+
+@media screen and (max-width: 540px) {
+    .footlogo{
+        height: 120px;
+    }
+
+    .footlogoright{
+        height: 50px;
+        left: 18%;
+    }
+    
+    .footlogoleft{
+        height: 50px;
+        left: 10%;
+    }
+
+    .comingsoon{
+        top: 55%;
+        left:65%;
+        transform: translate(-55%, -65%);
+        height: 150px;
+    }
+    .name{
+        height: 120px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .footlogo{
+        height: 250px;
+    }
+
+    .footlogoright{
+        height: 90px;
+        left:16%;
+    }
+    
+    .footlogoleft{
+        height: 90px;
+        left:10%;
+    }
+
+    .comingsoon{
+        top: 55%;
+        left:65%;
+        transform: translate(-55%, -65%);
+        height: 350px;
+    }
+    .name{
+        height: 250px;
+    }
+}
+
+/* For Small Laptops */
+@media screen and (min-width: 780px) and (max-width: 1280px) {
+    .name{
+        height: 300px;
+    }
+    
+    .footlogo{
+        height: 300px;
+    }
+    
+    .footlogoright{
+        height: 120px;
+        left:28%;
+    }
+    
+    .footlogoleft{
+        height: 120px;
+        left:22%;
+    }
+    
+    .comingsoon{
+        height: 450px;
+    }
+}
