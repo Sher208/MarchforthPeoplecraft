@@ -47,11 +47,22 @@ const leftfootpath3 = {
     ]
 };
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() >= $(document).height() - $(window).height() - 100) {
+// $(window).scroll(function() {
+//     if ($(window).scrollTop() >= $(document).height() - $(window).height() - 100) {
+//         $(window).scrollTop(0);
+//     }
+// });
+
+window.onscroll = function() {
+    var d = document.documentElement;
+    var offset = d.scrollTop + window.innerHeight;
+    var height = d.offsetHeight;
+    console.log('offset = ' + offset);
+    console.log('height = ' + height);
+    if (offset >= height) {
         $(window).scrollTop(0);
     }
-});
+  }
 
 const footLogo = document.querySelector('.footlogo');
 const footLeft = document.querySelector('.footlogoleft');
