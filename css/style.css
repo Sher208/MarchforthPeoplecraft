@@ -59,88 +59,169 @@ header{
     opacity: 0;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
     .footlogo{
-        top: 22%;
-        left:5%;
-        transform: translate(-22%, -5%);
+        top: 25%;
+        left:18%;
+        transform: translate(-25%, -18%);
         position: absolute;
-        height: 120px;
+        height: 140px;
     }
 
     .footlogoright{
         height: 50px;
-        left: 18%;
+        left: 24%;
     }
     
     .footlogoleft{
         height: 50px;
-        left: 10%;
+        left: 18%;
     }
 
     .comingsoon{
-        top: 30%;
-        left:40%;
-        transform: translate(-30%, -40%);
-        height: 150px;
+        top: 35%;
+        left:50%;
+        transform: translate(-35%, -50%);
+        height: 180px;
     }
     .name{
         top: 25%;
-        left:25%;
-        transform: translate(-25%, -25%);
+        left:35%;
+        transform: translate(-25%, -35%);
         position: absolute;
-        height: 120px;
+        height: 140px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 660px) {
+    .name{
+        height: 190px;
+    }
+    
+    .footlogo{
+        height: 190px;
+    }
+    
+    .footlogoright{
+        height: 70px;
+        left:19%;
+    }
+    
+    .footlogoleft{
+        height: 70px;
+        left:12%;
+    }
+    
+    .comingsoon{
+        height: 270px;
     }
 }
 
 /* For Tablets */
-@media screen and (min-width: 540px) and (max-width: 780px) {
-    .footlogo{
-        height: 250px;
+@media screen and (min-width: 660px) and (max-width: 780px) {
+    .name{
+        height: 200px;
     }
-
+    
+    .footlogo{
+        height: 200px;
+    }
+    
     .footlogoright{
-        height: 90px;
-        left:16%;
+        height: 80px;
+        left:19%;
     }
     
     .footlogoleft{
-        height: 90px;
-        left:10%;
+        height: 80px;
+        left:12%;
     }
-
+    
     .comingsoon{
-        top: 55%;
-        left:65%;
-        transform: translate(-55%, -65%);
-        height: 350px;
-    }
-    .name{
-        height: 250px;
+        height: 300px;
     }
 }
 
 /* For Small Laptops */
-@media screen and (min-width: 780px) and (max-width: 1280px) {
+@media screen and (min-width: 780px) and (max-width: 900px) {
     .name{
-        height: 300px;
+        height: 240px;
     }
     
     .footlogo{
-        height: 300px;
+        height: 240px;
     }
     
     .footlogoright{
-        height: 120px;
-        left:28%;
+        height: 90px;
+        left:19%;
     }
     
     .footlogoleft{
-        height: 120px;
-        left:22%;
+        height: 90px;
+        left:12%;
     }
     
     .comingsoon{
-        height: 450px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1050px) {
+    .name{
+        height: 260px;
+    }
+    
+    .footlogo{
+        height: 260px;
+    }
+    
+    .footlogoright{
+        height: 100px;
+        left:20%;
+    }
+    
+    .footlogoleft{
+        height: 100px;
+        left:14%;
+    }
+    
+    .comingsoon{
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1280px) {
+    .name{
+        height: 280px;
+    }
+    
+    .footlogo{
+        height: 280px;
+    }
+    
+    .footlogoright{
+        height: 110px;
+        left:24%;
+    }
+    
+    .footlogoleft{
+        height: 110px;
+        left:18%;
+    }
+    
+    .comingsoon{
+        height: 430px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
+    
+    .footlogoright{
+        left:24%;
+    }
+    
+    .footlogoleft{
+        left:18%;
     }
 }
