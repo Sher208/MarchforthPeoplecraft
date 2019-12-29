@@ -61,11 +61,11 @@ header{
 
 @media screen and (max-width: 600px) {
     .footlogo{
-        top: 25%;
-        left:10%;
-        transform: translate(-25%, -10%);
+        top: 23%;
+        left:5%;
+        transform: translate(-23%, -5%);
         position: absolute;
-        height: 140px;
+        height: 130px;
     }
 
     .footlogoright{
@@ -82,14 +82,14 @@ header{
         top: 30%;
         left:40%;
         transform: translate(-30%, -40%);
-        height: 180px;
+        height: 160px;
     }
     .name{
         top: 25%;
         left:25%;
         transform: translate(-25%, -25%);
         position: absolute;
-        height: 140px;
+        height: 130px;
     }
 }
 
