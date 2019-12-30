@@ -26,6 +26,10 @@ header{
 
 .icons{
     z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     position: absolute;
     font-size: 20px;
     top: 10px;
@@ -207,7 +211,17 @@ header{
         transform: translate(-20px, -20px);
     }
 
-
+    .icons{
+        font-size: 13px;
+        top: 5px;
+        right: 5px;
+        flex-direction: column;
+    }
+    
+    .icons .fa{
+        margin: 5px;
+        padding: 15px;
+    }
 
 
     .down {
@@ -264,6 +278,17 @@ header{
         position: absolute;
         height: 130px;
     }
+
+    #snackbar {
+        width: 150px;
+        margin-left: -75px;
+        text-align: center;
+        padding: 10px;
+        left: 50%;
+        top: 30px;
+        font-size: 13px;
+      }
+    
 }
 
 @media screen and (min-width: 600px) and (max-width: 660px) {
@@ -288,6 +313,21 @@ header{
     .comingsoon{
         height: 270px;
     }
+
+    .icons{
+        flex-direction: column;
+    }
+
+    #snackbar {
+        width: 150px;
+        margin-left: -75px;
+        text-align: center;
+        padding: 10px;
+        left: 50%;
+        top: 30px;
+        font-size: 13px;
+      }
+
 }
 
 /* For Tablets */
@@ -312,6 +352,10 @@ header{
     
     .comingsoon{
         height: 300px;
+    }
+
+    .icons{
+        flex-direction: column;
     }
 }
 
