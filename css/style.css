@@ -214,9 +214,9 @@ header{
     .icons{
         flex-direction: column;
         font-size: 13px;
-        bottom: 10px;
+        bottom: 30px;
         right: 10px;
-        transform: translateY(-10px) translateX(-10px);
+        transform: translateY(-30px) translateX(-10px);
     }
     
     .icons .fa{
