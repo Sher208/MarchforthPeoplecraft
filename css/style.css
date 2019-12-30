@@ -36,6 +36,7 @@ header{
     bottom: 20px;
     right: 10px;
     transform: translateY(-20px) translateX(-20px);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icons .fa{
