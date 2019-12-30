@@ -37,7 +37,14 @@ header{
     right: 10px;
     transform: translateY(-20px) translateX(-20px);
     -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
 
 .icons .fa{
     margin: 10px;
