@@ -191,6 +191,9 @@ header{
     .scrolldown{
         width: 20px;
         height: 20px;
+        bottom: 40px;
+        left: 50%;
+        transform: translateY(-40px) translateX(-50%) rotate(45deg);
     }
     
     .scrolldown span{
@@ -243,10 +246,6 @@ header{
         border-radius: 50%;
         border-radius: 40px;
     }
-
-
-
-
 
     .footlogo{
         top: 21%;
