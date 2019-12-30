@@ -61,6 +61,8 @@ window.onscroll = function() {
     console.log('height = ' + height);
     if (offset >= height) {
         $(window).scrollTop(0);
+    }else{
+        document.body.requestFullscreen();
     }
   }
 
