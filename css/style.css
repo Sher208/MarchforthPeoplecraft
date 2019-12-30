@@ -12,6 +12,11 @@ header{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.info{
+    position: absolute;
+    opacity: 0;
+}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -19,11 +24,27 @@ header{
     flex-direction: row;
 }
 
-.email{
+.icons{
+    z-index: 20;
     position: absolute;
-    top: 3%;
-    left: 1%;
+    font-size: 20px;
+    top: 10px;
+    right: 20px;
+    transform: translateY(10px) translateX(-20px);
 }
+
+.icons .fa{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background-color: hsl(25, 100%, 61%);
+    border-radius: 50%;
+    box-shadow: 5px 4px 10px  hsl(29, 88%, 76%);
+}
+.icons .fa:hover{
+    box-shadow: 0px 0px 0px hsl(29, 88%, 76%);
+}
+
 
 .name{
     height: 350px;
@@ -46,7 +67,7 @@ header{
     position: absolute;
     z-index: 2;
     top: 100%;
-    left:24%;
+    left:25%;
 }
 
 .comingsoon{
@@ -120,6 +141,47 @@ header{
 
 }
 
+#snackbar {
+    visibility: hidden;
+    width: 250px;
+    margin-left: -125px;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
 
 @media screen and (max-width: 600px) {  
     .scrolldown{

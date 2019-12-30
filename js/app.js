@@ -69,6 +69,8 @@ const footLeft = document.querySelector('.footlogoleft');
 const footRight = document.querySelector('.footlogoright');
 const nameLogo = document.querySelector('.name');
 const comingSoon = document.querySelector('.comingsoon');
+const email = document.querySelector('#email');
+const whatsapp = document.querySelector('#whatsapp');
 
 const tween = new TimelineLite({immediateRender:false});
 tween.fromTo(footLogo, 1, {
@@ -170,3 +172,34 @@ const scene = new ScrollMagic.Scene({
 .setPin('.logo')
 .addTo(controller)
 
+email.addEventListener('click', function(){
+    console.log("entered");
+    var x = document.getElementById("snackbar");
+    var copyText = document.getElementById('email-info');
+    copyText.select();
+    var c = document.execCommand("copy");
+    if(c){
+        x.innerHTML = "Copied Email"
+    }else{
+        x.innerHTML = "Error In Copying"
+    }
+    console.log("finished");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+});
+
+whatsapp.addEventListener('click', function(){
+    console.log("entered");
+    var x = document.getElementById("snackbar");
+    var copyText = document.getElementById('whatsapp-info');
+    copyText.select();
+    var c = document.execCommand("copy");
+    if(c){
+        x.innerHTML = "Copied Number"
+    }else{
+        x.innerHTML = "Error In Copying"
+    }
+    console.log("finished");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+});
